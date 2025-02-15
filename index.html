@@ -32,6 +32,38 @@
                     return num1 * num2;
                 }
                 console.log(multiply(5, 3));
+        
+        //Arrow Functions
+            //divide adında bir ok fonksiyonu yazın. 
+                // Bu fonksiyon iki sayı almalı ve bu sayıların bölme sonucunu döndürmeli. 
+                // Fonksiyonu 10 ve 2 ile test edin, sonucu konsola yazdırın.
+
+                const divide = (num1, num2) => {
+                    if(typeof num1 !== "number" || typeof num2 !== "number") {
+                        throw "Lütfen sayısal değerler giriniz.";
+                    }
+
+                    return num1 / num2;
+                }
+                console.log(divide(10, 2));
+
+        //Varsayılan Parametreler
+            //greetUser adında bir fonksiyon oluşturun. 
+                // Bu fonksiyon bir name ve surname parametresi almalı. 
+                // name parametresinin varsayılan değeri "Misafir" olmalı.
+                // Fonksiyon "Hoş geldin, [isim] [soyisim]!" mesajını döndürmeli. Bu mesajı + ile oluşturun.
+                //Fonksiyonu hem argüman olmadan hem de John Doe ismiyle çağırarak test edin. Sonuçları konsola yazdırın. 
+                
+                const greetUser = (name = "Misafir", surname) => {
+
+                    if(!surname) {
+                        return "Hoş geldin, " + name + "!";
+                    }
+
+                    return "Hoş geldin, " + name + " " + surname + "!";
+                }
+                console.log(greetUser());
+                console.log(greetUser("John", "Doe"));
     </script>
 </body>
 </html>
