@@ -17,7 +17,21 @@
                     
                 }
                 console.log(sayHello("Alice"));
-                
+
+        //Function Expression
+            //multiply isminde bir değişkene atanmış bir fonksiyon ifadesi oluşturun. 
+                // Bu fonksiyon iki sayı almalı ve bu sayıların çarpımlarının sonucunu döndürmeli. 
+                // Fonksiyonu 5 ve 3 ile çağırın, ardından sonucu konsola yazdırın.
+
+                const multiply = function (num1, num2) {
+
+                    if(typeof num1 !== "number" || typeof num2 !== "number") {
+                        throw "Lütfen sayısal değerler giriniz.";
+                    }
+
+                    return num1 * num2;
+                }
+                console.log(multiply("ali", 3));
     </script>
 </body>
 </html>
